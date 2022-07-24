@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Roboto:300,400,500,700,900&amp;display=swap");
+
+*{
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:#1A1A1D;
+  
+
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  height: 100 ;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/*--Nav Bar--*/
+
+#mySidenav a {
+  position: absolute;
+  left: -90px;
+  transition: 0.3s;
+  padding: 15px;
+  padding-inline:4px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#aboutn {
+  top: 220px;
+  background-color: #c3073f;
+  font-family:Georgia;
+
+}
+
+#blogn {
+  top: 280px;
+  background-color: #c3073f;
+  font-family:Georgia;
+  
+}
+
+#projectsn {
+  top: 340px;
+  background-color: #c3073f;
+  font-family:Georgia;
+}
+
+
+#contactn {
+  top: 400px;
+  background-color: #c3073f;
+  font-family:Georgia;
+}
+
+
+/*--Parallax--*/
+
+.parallax {
+  /* The image used */
+  background-image: url("img/bg.png");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.r_color {
+  color: #c3073f;
+  background-color: transparent;
+}
+ 
+/*--Parallax + Name--*/
+
+  .text-block {
+    position: absolute;
+    top: 330px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: pointer;
+    font-size: 60px;
+    overflow: hidden;
+    background-color: transparent;
+    line-height: 60px;
+    
+  }
+
+
+
+  .typewriter-text {
+ 
+  	overflow: hidden;
+    font-family: Courier, monospace;
+  	letter-spacing: 2px;
+ 	  animation: typing 4s steps(18, end) 1.5s normal both, blink .75s step-end infinite;
+    white-space:nowrap;
+    font-size: 25px;
+    background-color: transparent;
+    font-weight: 700;
+    border-right: 4px solid ;
+    margin: 0 auto;
+    
+ 
+}
+
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #c3073f; 
+    }
+} 
+ 
+
+
+
+/*--Image About--*/
+
+
+.p_text1{
+  font-size: 60px;
+  color: FFFEFF;
+  cursor: pointer;
+  overflow: hidden;
+  display: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+
+}
+.text_about {
+  color: #6F2232;
+  font:30px ;
+  padding: 4%;  
+}
+
+
+.image{
+  height: 25vw;
+  width: 25vw;
+  float: left;
+  margin: 7.5vw;
+  margin-top: 4.5vw;
+}
+
+.name{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 370;
+  font-size: 4.5vw;
+  margin: 0px;
+  line-height: 4.5vw;
+  padding-top: 12vw;
+  padding-bottom: 0vw;
+  color: #4E4E50;
+  background: transparent;
+}
+
+.introduction{
+  display: inline;
+  float: left;
+  width: 55vw;
+  text-align: center;
+  height: fit-content;
+ 
+  
+}
+
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+ 
+}
+
+.blogimg {
+ 
+  width: 100%;
+  padding: auto;
+  
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color:#1A1A1D;
+   padding: 30px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+
+.text_about3 {
+  
+  color: #950740;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto auto;
+  margin-top: 2vw;
+  padding-bottom: 0%;
+  
+}
+
+.p_text2{
+  font-size:60px;
+  color: FFFEFF;
+  overflow: hidden;
+  display: center;
+  text-align: center;
+  margin: auto;
+  margin-top:1%;
+  color: #4E4E50;
+}
+
+.projectText{
+  color: #4E4E50;
+  font-size: 18px;
+  text-align:center;
+  margin-bottom: 1vw;
+  padding-inline: 2%;
+}
+
+.projectIcon{
+  transition: .2s;
+  width:55px;
+  background: transparent;
+  margin-inline: 10px ;
+
+}
+
+.projectIcon:hover {
+  
+  transform: scale(1.4); 
+}
+
+.projectIconb{
+  transition: .4s ease-in-out;
+  width:55px;
+  background: transparent;
+  margin-inline: 10px ;
+
+}
+
+.projectIconb:hover {
+  transform: rotate(360deg);
+}
+
+
+
+hr {
+
+  width:8%; 
+  text-align:center; 
+  margin: 0 auto;
+  border: 1px solid #6F2232;
+}
+
+.p_text3{
+  font-size:40px;
+  color: FFFEFF;
+  overflow: hidden;
+  display: center;
+  text-align: center;
+  margin: auto;
+  color: #4E4E50;
+}
+
+
+
+.icon{
+  margin: 10px 0px 1vw 0px;
+  width: 100vw;
+
+}
+
+.footerIcon{
+  width: 50px;
+  transition: .2s;
+  background: transparent;
+
+}
+
+.footerIcon:hover{
+  transform: scale(1.4);
+
+}
+
+
+/*
+
+.image_about2 {
+  flex-basis: 100%;
+  width: 230px;
+  cursor: pointer;            
+  margin: auto;
+  padding-bottom: 1%;
+
+}
+
+.text_about2 {
+  color: white;
+  font: 3px ;
+  overflow: hidden;
+  display: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  
+}
+
+
+#mySidefooter a {
+  position: absolute;
+  left: -90px;
+  transition: 0.3s;
+  padding: 10px;
+  padding-inline: 4px;
+  width: 118px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#mySidefooter a:hover {
+  left: 0;
+}
+
+#linkedin {
+  margin-top: 10px;
+  background-color: #2867B2;
+  font-family:Georgia;
+}
+
+.image_about3 {
+  flex-basis: 100%;
+  width: 160px;
+  cursor: pointer;            
+  margin: auto;
+  padding-bottom: 0%;
+
+}
+
+#insta {
+  margin-top: 60px;
+  background-color: rgb(225, 48, 108);
+  font-family:Georgia;
+}
+
+#fb {
+  margin-top: 110px;
+  background-color: #4267B2;
+  font-family:Georgia;
+
+}
+
+#twitter {
+  margin-top: 160px;
+  background-color: #1DA1F2;
+  font-family:Georgia;
+  
+}*/
+
+.buttond {
+  
+  padding: 8px 10px ;
+  background-color: #c3073f;
+  border:none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  color: white;
+  font-size: 1.4vw;
+  position: fixed;
+  bottom: 1%; 
+  right:1%; 
+  font-size: 100%;
+}
+.buttond:hover {
+  background-color: #6F2232;
+}
+
+@media screen and (max-width: 900px) {
+  
+  .text-block {     
+    margin-left: 20px;
+    }
+
+  .image{
+      width: 70vw;
+      height: 70vw;
+      margin: 8vw 13vw 0vw 15vw;
+      padding-bottom: 0vw;
+  }
+  .name{
+      font-size: 40px;
+      line-height: 42px;
+      margin: 0vw;
+      padding-top: 3vw;
+      font-weight: 500; 
+  }
+  .introduction{
+      height: fit-content;
+      margin: 0vw;
+      padding: 0vw;
+      width: 98vw;
+      text-align: center;   
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .typewriter-text {     
+  font-size: 20px;
+  }
+}
+
+
+
+
+/*--------BLOG PAGE-----------*/
+
+/*--Nav Bar--*/
+
+
+#homeb {
+  top: 220px;
+  background-color: #c3073f;
+  font-family:Georgia;
+}
+
+#blogb {
+  top: 280px;
+  background-color: #c3073f;
+  font-family:Georgia;
+}
+
+#aboutb {
+  top: 340px;
+  background-color: #c3073f;
+  font-family:Georgia;
+}
+
+#contactb {
+  top: 400px;
+  background-color: #c3073f;
+  font-family:Georgia;
+}
+
+
+ .blogImage{
+  width:720px;
+ }
+
+ @media screen and (max-width: 900px) {
+
+  .blogImage{
+      width: 90vw;
+      margin: 2vw 5vw 0vw 5vw;
+  }
+ }
+ .blogText{
+  color: #4E4E50;
+  margin-inline: 10%;
+  margin-block: 4%;
+  text-align: left;
+  font-size: 18px;
+ }
+
+ .paraHeading{
+  color:#c3073f;
+  font-size: 20px;
+ }
+
+ .blogHeading{
+   color: #950740;;
+   margin-top: 5%;
+   font-size: 30px;
+ }
+
+
+.blogHigh{
+  color:#c3073f;
+  font-size: 22px;
+  margin-inline: 10%;
+  text-align: left;
+  margin-top: 3%;
+ }
+
+ .blogText1{
+  color: #4E4E50;
+  margin-inline: 10%;
+  text-align: left;
+  font-size: 18px;
+ }
+
+ .blogNo{
+  color:#6F2232;
+  margin-inline: 10%;
+  text-align: left;
+
+ }
+
+ .typewriter-text2 {
+ 
+  overflow: hidden;
+  font-family: Courier, monospace;
+  letter-spacing: 2px;
+   animation: typing2 3s steps(13, end) 1.5s normal both, blink2 .75s steps(13, end) infinite;
+  white-space:nowrap;
+  font-size: 25px;
+  background-color: transparent;
+  font-weight: 700;
+  border-right: 4px solid ;
+  margin: 0 auto;
+}
+
+
+@keyframes typing2 {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink2 {
+  from { 
+      border-color: transparent 
+  }
+  to { 
+      border-color: #c3073f; 
+  }
+} 
+
+.buttonb {
+  
+  padding: 8px 10px ;
+  border-color:#c3073f;
+  border-radius: 1%;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  color:#c3073f;
+  font-size: 1vw;
+  font-size: 100%;
+  position: relative;
+  padding-inline: 1.5vw;
+  border-width: 1.5px;
+  margin: 1vw auto 2vw auto;
+  font-weight: bolder;
+}
+.buttonb:hover {
+  transform: scale(1.4);
+}
